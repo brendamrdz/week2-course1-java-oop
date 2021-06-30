@@ -87,6 +87,11 @@ Doctor myDoctor = new Doctor();
 myDoctor.name = "Brenda MR";
 myDoctor.showName();
 ```
+#### Types of Memory
+An object is a reference to a space in memory. When we create objects, Java saves them in memory and returns coordinates with which we can access the information we store.
+There are two types of memory: Stack and Heap.
+<br>
+<img src="https://github.com/brendamrdz/week2-course1-java-oop/blob/main/objects-variables.png?raw=true" alt="alt text" width="50%" height="auto">
 
 
 
