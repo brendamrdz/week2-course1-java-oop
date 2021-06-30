@@ -1,28 +1,52 @@
 # Object Oriented Programming in Java
 > The aim of this project is to summarize the content of the Platzi course "Object Oriented Programming in Java", We can take this document as a point of reference for the future inqueries.
 
-## Table of contents
-* [General info](#general-info)
-* [Technologies](#technologies)
-* [Setup](#setup)
+# OOP in Java
+## Programming paradigms 
+Theory that provides us with a standardized basis and model for solving problems with our code.
 
-## General info
-This project is simple Lorem ipsum dolor generator.
-	
-## Technologies
-Project is created with:
-* Lorem version: 12.3
-* Ipsum version: 2.33
-* Ament library version: 999
-	
-## Setup
-To run this project, install it locally using npm:
+## Object Oriented Programming (OOP) 
+Helps us analyze and understand all these problems to solve them in the most sustainable way in the future.
+### OOP Pillars
+- Encapsulamiento
+- Abstracción
+- Herencia
+- Polimorfismo
 
+### OOP elements
+#### Clases
+
+#### Propiedades
+Properties or attributes are the characteristics of an objects. These attributes will always be nouns and can have different values that will refer to names, sizes, shapes, and states.
+
+#### Métodos
+Behaviors or methods will be all the operations of an objects that usually are called using verbs or nouns and verbs. For example: the methods of the session object can be login(), logout(), makeReport(), and so on.
+
+#### Objetos
+Objects are all physical or conceptual things that have properties and behaviors. For example: user, session, auto, etc.
+
+##### Declaring an Object:
+
+```bash
+// type of object ---- Object Name
+Doctor myDoctor;
 ```
-$ cd ../lorem
-$ npm install
-$ npm start
+##### Instantiating an object:
+
+```bash
+// Object Name---- Class based
+myDoctor = new Doctor();
 ```
-## Sources
-This app is inspired by Rando Kim book „Time of Your Life”
-and Android app tutorial by [@eericon](https://www.eericon.github.io/post/timer-android)
+#### Declaring and instantiating an object on the same line:
+```bash
+// Declares the object ---- Instanciar el objeto
+Doctor myDoctor = new Doctor();
+```
+#### Using the Object:
+
+```bash
+// Declares the object ---- Instanciar el objeto
+Doctor myDoctor = new Doctor();
+myDoctor.name = "Brenda MR";
+myDoctor.showName();
+```
