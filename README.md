@@ -59,30 +59,25 @@ Properties or attributes are the characteristics of an objects. These attributes
 
 #### Methods
 Behaviors or methods will be all the operations of an objects that usually are called using verbs or nouns and verbs. For example: the methods of the session object can be login(), logout(), makeReport(), and so on.
-##### Static Variables and Methods
-Static Variables and Methods help us to execute or get some code from classes that have not been instantiated, since their values are saved in the memory of our program, not in different objects instantiated through a class.
-#### Declaring an Object:
 
+- #### Declaring an Object:
 ```bash
-// type of object ---- Object Name
 Doctor myDoctor;
 ```
-#### Instantiating an object:
+
+- #### Instantiating an object:
 The Constructor Method is the first method that is executed by default when we create a class, it allows us to create new instances of a class. We invoke it with the reserved word new followed by the name with which we initialize the class and parentheses.
 
 ```bash
-// Object Name---- Class based
 myDoctor = new Doctor();
 ```
-#### Declaring and instantiating an object on the same line:
+- #### Declaring and instantiating an object on the same line:
 ```bash
-// Declares the object ---- Instanciar el objeto
 Doctor myDoctor = new Doctor();
 ```
-#### Using the Object:
+- #### Using the Object:
 
 ```bash
-// Declares the object ---- Instanciar el objeto
 Doctor myDoctor = new Doctor();
 myDoctor.name = "Brenda MR";
 myDoctor.showName();
