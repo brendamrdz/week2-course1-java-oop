@@ -153,6 +153,7 @@ Day.SATURDAY
 ## Interfaces
 It is reference type similar to a class that could contain only constants and methods definitions.
 The shape of a class is set (method names, argument lists and return types, but not code blocks).
+- Composition of Interfaces in Classes: abstract all the methods / behaviors of a class to modularize them (compress them, encapsulate them) in an interface and reuse their code in different classes.
 Example:
 ```bash
 public interface ISchedulable{
@@ -163,17 +164,41 @@ implements ISchedulable{
 
 }
 ```
-- Composition of Interfaces in Classes: abstract all the methods / behaviors of a class to modularize them (compress them, encapsulate them) in an interface and reuse their code in different classes.
+As of Java 8 they can be implemented in methods to inherit and reuse different behaviors. Not all interface methods must be abstract, now it is possible to use the default access modifier and from Java 9 also private. 
+Interfaces can inherit from other interfaces using the extends keyword, the concept of inheritance will be applied as it is naturally practiced in classes, the interface will inherit and acquire the methods of the parent interface.
+
+An interesting thing that happens in case of inheritance with interfaces is that, here multiple inheritance is allowed 
 
 ## Abstract Classes 
+<br>
+<img src="https://github.com/brendamrdz/week2-course5-java-oop/blob/main/abs.png?raw=true" alt="alt text" width="30%" height="auto">
 They are a mix between interfaces and inheritance where not all methods are implemented no instances are created either. 
 
 ```bash
 public abstract class Figura {
-  // ...
+  abstract void dibujar(); // obligatorio
+  void dibujar3D(); // no es obligatorio
 }
 
 class Triangulo extends Figura {
-  // ...
+  void dibujar() {
+    // Instrucciones para dibujar el triángulo...
+  }
 }
+```
+## Anonymous Classes 
+Anonymous Classes are a way to instantiate abstract classes without using their child classes. But this type of instantiation has some restrictions: the life cycle of these instances is NOT long-lasting, we will not have them available during the entire execution of the program. 
+```bash
+// Abstract Class:
+public abstract class Figura {
+  abstract void dibujar();
+}
+
+// Anonymous Class:
+User user = new User() {
+  @Override
+  public void showDataUser() {
+    // Instrucciones...
+  }
+};
 ```
