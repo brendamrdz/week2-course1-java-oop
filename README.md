@@ -9,10 +9,17 @@ Theory that provides us with a standardized basis and model for solving problems
 Helps us analyze and understand all these problems to solve them in the most sustainable way in the future.
 ### OOP Pillars
 - #### Encapsulamiento
-
+ Access Modifiers help us limit where we can read or modify special attributes of our classes
+| Modificador | Clase | Package | Subclase | Otros |
+|-------------|-------|---------|----------|-------|
+| public      | ✔     | ✔       | ✔        | ✔     |
+| protected   | ✔     | ✔       | ✔        | •     |
+| default     | ✔     | ✔       | •        | •     |
+| private     | ✔     | •       | •        | •     |
 - #### Abstracción: 
 Abstraction is about analyzing objects independently, their properties, characteristics and behaviors, to abstract their composition and generate a model, which we translate into code as classes.
 - #### Herencia
+Don´t repeat yourself
 
 - #### Polimorfismo
 
@@ -85,11 +92,43 @@ myDoctor.showName();
 #### Types of Memory
 An object is a reference to a space in memory. When we create objects, Java saves them in memory and returns coordinates with which we can access the information we store.
 There are two types of memory: Stack and Heap.
+Objects use stack memory but not to save their information, it is used for save coordinates to the true location of the object in heap memory
 <br>
 <img src="https://github.com/brendamrdz/week2-course1-java-oop/blob/main/objects-variables.png?raw=true" alt="alt text" width="50%" height="auto">
 
+## Nested Classes
+Nested Classes or Helper Classes are classes within other classes that we group by their common logic and / or characteristics.
+types of nested classes
+Nested Classes can call any type of element or method.
+### Nested Static classes
+- No need to create instances to call them
+- Only the static methods of their parent classes can be called 
+```bash
+class ClaseExterior{
+//Clases internas
+    class ClaseInterna {
+    }
+    
+//Clases estaticas
+   static class ClaseStaticaAnidada {
+    }
+}
+```
+## Enumerations
+Enumerations are a data type used to declare a collection of constants. As they are constant, they must be written in capital letters 
 
-
-
-
-
+To declare an enumeration use the enum keyword. 
+```bash
+public enum Day {
+	SUNDAY, MONDAY, TUESDAY, WEDNESDAY,
+	THURSDAY, FRIDAY, SATURDAY
+}
+```
+Se puede llamar un valor de enumeration como se muestra a continuación
+```bash
+public enum Day {
+Day.MONDAY;
+Day.FRIDAY;
+Day.SATURDAY
+}
+```
