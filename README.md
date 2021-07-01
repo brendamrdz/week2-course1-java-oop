@@ -16,10 +16,13 @@ Helps us analyze and understand all these problems to solve them in the most sus
 | protected   | ✔     | ✔       | ✔        | •     |
 | default     | ✔     | ✔       | •        | •     |
 | private     | ✔     | •       | •        | •     |
-- #### Abstracción: 
+- #### Abstraction: 
 Abstraction is about analyzing objects independently, their properties, characteristics and behaviors, to abstract their composition and generate a model, which we translate into code as classes.
-- #### Herencia
-Don´t repeat yourself
+- #### inheritance
+Don’t repeat yourself (DRY) consists of detecting when we are repeating the same code over and over again to create a method or function that helps us avoid these repetitions. 
+
+
+Super indicates that a variable or method is from the parent class, the superclass from which our subclasses inherit, we only use it when we apply inheritance. 
 
 - #### Polimorfismo
 
