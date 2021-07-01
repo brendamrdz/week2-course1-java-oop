@@ -18,14 +18,29 @@ Helps us analyze and understand all these problems to solve them in the most sus
 | private     | ✔     | •       | •        | •     |
 - #### Abstraction: 
 Abstraction is about analyzing objects independently, their properties, characteristics and behaviors, to abstract their composition and generate a model, which we translate into code as classes.
-- #### inheritance
+- #### Inheritance
 Don’t repeat yourself (DRY) consists of detecting when we are repeating the same code over and over again to create a method or function that helps us avoid these repetitions. 
 
+```bash
+public class SuperClass {
+  // ...
+}
 
-Super indicates that a variable or method is from the parent class, the superclass from which our subclasses inherit, we only use it when we apply inheritance. 
+public class SubClass extends SuperClass {
+  // ...
+}
+```
+- "Super" indicates that a variable or method is from the parent class, the superclass from which our subclasses inherit, we only use it when we apply inheritance. Also, we can call the constructor of the parent class from its different subclasses using super (); and sending the arguments that are necessary. 
+- "this" allows us to specify that our variables are pointing to the same class where we are working. 
+<br>
+<img src="https://github.com/brendamrdz/week2-course5-java-oop/blob/main/super-this.PNG?raw=true" alt="alt text" width="30%" height="auto">
+
+ 
 
 - #### Polimorfismo
-
+Consists of overriding some methods of the class from which our subclasses inherit to assign different behaviors. 
+- Methods marked as final or static cannot be overwritten.
+- In addition to the superclass methods, it is also possible to redefine the behavior of the methods that "inherit" all our objects, as well as .toString, hashCode, finalize, notify, etc.
 ## Modularity
 Modularity consists of dividing our program into different modules so that they can be joined or separated without breaking between them or losing any functionality. Modularity in Object-Oriented Programming helps us to: 
 - Modularity 
@@ -133,5 +148,32 @@ public enum Day {
 Day.MONDAY;
 Day.FRIDAY;
 Day.SATURDAY
+}
+```
+## Interfaces
+It is reference type similar to a class that could contain only constants and methods definitions.
+The shape of a class is set (method names, argument lists and return types, but not code blocks).
+Example:
+```bash
+public interface ISchedulable{
+	schedule(Date date, String Time);
+}
+public class AppointmentDoctor
+implements ISchedulable{
+
+}
+```
+- Composition of Interfaces in Classes: abstract all the methods / behaviors of a class to modularize them (compress them, encapsulate them) in an interface and reuse their code in different classes.
+
+## Abstract Classes 
+They are a mix between interfaces and inheritance where not all methods are implemented no instances are created either. 
+
+```bash
+public abstract class Figura {
+  // ...
+}
+
+class Triangulo extends Figura {
+  // ...
 }
 ```
