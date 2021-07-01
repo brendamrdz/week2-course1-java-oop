@@ -8,7 +8,7 @@ Theory that provides us with a standardized basis and model for solving problems
 ## Object Oriented Programming (OOP) 
 Helps us analyze and understand all these problems to solve them in the most sustainable way in the future.
 ### OOP Pillars
-- #### Encapsulamiento
+- #### Encapsulation
  Access Modifiers help us limit where we can read or modify special attributes of our classes
 | Modificador | Clase | Package | Subclase | Otros |
 |-------------|-------|---------|----------|-------|
@@ -35,15 +35,12 @@ public class SubClass extends SuperClass {
 <br>
 <img src="https://github.com/brendamrdz/week2-course5-java-oop/blob/main/super-this.PNG?raw=true" alt="alt text" width="30%" height="auto">
 
- 
-
-- #### Polimorfismo
+- #### Polymorphism
 Consists of overriding some methods of the class from which our subclasses inherit to assign different behaviors. 
 - Methods marked as final or static cannot be overwritten.
 - In addition to the superclass methods, it is also possible to redefine the behavior of the methods that "inherit" all our objects, as well as .toString, hashCode, finalize, notify, etc.
 ## Modularity
-Modularity consists of dividing our program into different modules so that they can be joined or separated without breaking between them or losing any functionality. Modularity in Object-Oriented Programming helps us to: 
-- Modularity 
+Modularity consists of dividing our program into different modules so that they can be joined or separated without breaking between them or losing any functionality. Modularity in Object-Oriented Programming helps us to:  
 - Reuse 
 - Avoid collapses 
 - Maintainable 
@@ -51,8 +48,8 @@ Modularity consists of dividing our program into different modules so that they 
 - Quick troubleshooting
 
 
-## OOP Elements
-### Clases
+# OOP Elements
+## Clases
 Classes are the models on which we build our objects, that is, classes are the "molds" that allow us to generate objects. Each class must have identity (with a unique class name using Upper Camel Case), status (with its attributes) and behavior (with its methods and operations).
 ```bash
 Class Name: Doctor 
@@ -61,7 +58,7 @@ Operations: showName()
 ```
 ```bash
 
-####Syntax
+###Syntax
 // Clases:
 public class Doctor {
   // Atributos:
@@ -76,13 +73,13 @@ public class Doctor {
 }
 ```
 
-### Object
+## Object
 Objects are all physical or conceptual things that have properties and behaviors. For example: user, session, auto, etc.
 
-#### Properties
+### Properties
 Properties or attributes are the characteristics of an objects. These attributes will always be nouns and can have different values that will refer to names, sizes, shapes, and states.
 
-#### Methods
+### Methods
 Behaviors or methods will be all the operations of an objects that usually are called using verbs or nouns and verbs. For example: the methods of the session object can be login(), logout(), makeReport(), and so on.
 
 - #### Declaring an Object:
@@ -107,7 +104,7 @@ Doctor myDoctor = new Doctor();
 myDoctor.name = "Brenda MR";
 myDoctor.showName();
 ```
-#### Types of Memory
+## Types of Memory
 An object is a reference to a space in memory. When we create objects, Java saves them in memory and returns coordinates with which we can access the information we store.
 There are two types of memory: Stack and Heap.
 Objects use stack memory but not to save their information, it is used for save coordinates to the true location of the object in heap memory
