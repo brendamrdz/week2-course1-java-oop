@@ -33,7 +33,7 @@ public class SubClass extends SuperClass {
 - "Super" indicates that a variable or method is from the parent class, the superclass from which our subclasses inherit, we only use it when we apply inheritance. Also, we can call the constructor of the parent class from its different subclasses using super (); and sending the arguments that are necessary. 
 - "this" allows us to specify that our variables are pointing to the same class where we are working. 
 <br>
-<img src="https://github.com/brendamrdz/week2-course5-java-oop/blob/main/super-this.PNG?raw=true" alt="alt text" width="30%" height="auto">
+<img src="https://github.com/brendamrdz/week2-course5-java-oop/blob/main/images/super-this.PNG?raw=true" alt="alt text" width="30%" height="auto">
 
 - #### Polymorphism
 Consists of overriding some methods of the class from which our subclasses inherit to assign different behaviors. 
@@ -109,7 +109,7 @@ An object is a reference to a space in memory. When we create objects, Java save
 There are two types of memory: Stack and Heap.
 Objects use stack memory but not to save their information, it is used for save coordinates to the true location of the object in heap memory
 <br>
-<img src="https://github.com/brendamrdz/week2-course1-java-oop/blob/main/objects-variables.png?raw=true" alt="alt text" width="50%" height="auto">
+<img src="https://github.com/brendamrdz/week2-course5-java-oop/blob/main/images/objects-variables.png?raw=true" alt="alt text" width="50%" height="auto">
 
 ## Nested Classes
 Nested Classes or Helper Classes are classes within other classes that we group by their common logic and / or characteristics.
@@ -168,7 +168,7 @@ An interesting thing that happens in case of inheritance with interfaces is that
 
 ## Abstract Classes 
 <br>
-<img src="https://github.com/brendamrdz/week2-course5-java-oop/blob/main/abs.png?raw=true" alt="alt text" width="30%" height="auto">
+<img src="https://github.com/brendamrdz/week2-course5-java-oop/blob/main/images/abs.png?raw=true" alt="alt text" width="30%" height="auto">
 They are a mix between interfaces and inheritance where not all methods are implemented no instances are created either. 
 
 ```bash
